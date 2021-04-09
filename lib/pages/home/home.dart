@@ -4,7 +4,7 @@ import 'package:women_shop/config/constant.dart';
 import 'package:women_shop/pages/detail/detail.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .headline5
-                .apply(color: Colors.white),
+                ?.apply(color: Colors.white),
           ),
           SvgPicture.asset('assets/ic_bag.svg'),
         ],
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
 
 class PopularWidth extends StatelessWidget {
   const PopularWidth({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -122,7 +122,7 @@ class PopularWidth extends StatelessWidget {
                 width: 150,
                 child: Text(
                   title,
-                  style: Theme.of(context).textTheme.headline6.apply(
+                  style: Theme.of(context).textTheme.headline6?.apply(
                         color: Colors.black,
                       ),
                 ),
@@ -162,7 +162,7 @@ class PopularWidth extends StatelessWidget {
                 ),
                 Text(
                   "\$$price",
-                  style: Theme.of(context).textTheme.headline6.apply(
+                  style: Theme.of(context).textTheme.headline6?.apply(
                         color: Colors.black,
                       ),
                 ),
@@ -177,7 +177,7 @@ class PopularWidth extends StatelessWidget {
 
 class PopulerWidget extends StatelessWidget {
   const PopulerWidget({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -210,7 +210,7 @@ class PopulerWidget extends StatelessWidget {
 
 class PopulerItem extends StatelessWidget {
   const PopulerItem({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -278,7 +278,7 @@ class PopulerItem extends StatelessWidget {
             ),
             Text(
               title,
-              style: Theme.of(context).textTheme.headline6.apply(
+              style: Theme.of(context).textTheme.headline6?.apply(
                     color: Colors.black,
                   ),
             ),
@@ -301,7 +301,7 @@ class PopulerItem extends StatelessWidget {
                 Spacer(),
                 Text(
                   "\$$price",
-                  style: Theme.of(context).textTheme.headline6.apply(
+                  style: Theme.of(context).textTheme.headline6?.apply(
                         color: Colors.black,
                       ),
                 )
@@ -353,7 +353,7 @@ class CategoryHome extends StatelessWidget {
           SizedBox(height: 5),
           Text(
             "Watcher",
-            style: Theme.of(context).textTheme.bodyText2.apply(
+            style: Theme.of(context).textTheme.bodyText2?.apply(
                   color: Colors.white,
                 ),
           ),
@@ -365,7 +365,7 @@ class CategoryHome extends StatelessWidget {
 
 class HeaderHome extends StatelessWidget {
   const HeaderHome({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -397,14 +397,14 @@ class HeaderHome extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .headline5
-                    .apply(color: Colors.white),
+                    ?.apply(color: Colors.white),
               ),
               TextSpan(
                 text: "items!",
                 style: Theme.of(context)
                     .textTheme
                     .headline5
-                    .apply(color: Colors.white),
+                    ?.apply(color: Colors.white),
               )
             ]),
           ),

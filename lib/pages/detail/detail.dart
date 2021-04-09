@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:women_shop/config/constant.dart';
 
 class DetailPage extends StatelessWidget {
-  const DetailPage({Key key}) : super(key: key);
+  const DetailPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class DetailPage extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: "Pink Queen Watch\n\n",
-                        style: Theme.of(context).textTheme.headline5.apply(
+                        style: Theme.of(context).textTheme.headline5?.apply(
                               color: Colors.black,
                             ),
                       ),
@@ -56,7 +56,7 @@ class DetailPage extends StatelessWidget {
                 Spacer(),
                 Text(
                   "\$989",
-                  style: Theme.of(context).textTheme.headline6.apply(
+                  style: Theme.of(context).textTheme.headline6?.apply(
                         color: Colors.black,
                       ),
                 )
@@ -73,7 +73,7 @@ class DetailPage extends StatelessWidget {
                       style: Theme.of(context)
                           .textTheme
                           .headline6
-                          .apply(color: Colors.black)),
+                          ?.apply(color: Colors.black)),
                   TextSpan(
                     text:
                         "Occaecat qui sit quis labore reprehenderit nulla. Amet pariatur voluptate laboris ipsum veniam exercitation est do duis quis laborum reprehenderit aute.",
